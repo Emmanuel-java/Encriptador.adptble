@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #e2e8f0;
+    display: grid;
+    min-height: 100vh;
+    
+    padding-right: 1rem;
+    font-family: "Roboto Mono", monospace;
+  }
+  header{
+    z-index: 1000; 
+    position: relative;
+    background-image: url(https://wallpaperbat.com/img/22590-the-matrix-wallpaper.jpg);
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+    
+  }
+
+.container{
+    background-image: url(https://wallpaperbat.com/img/22590-the-matrix-wallpaper.jpg);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #b2ef75;
+    margin-top: -3rem;
+}
+
+.texto {
+    position: absolute;
+    width: 36%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family:"Inter" ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+    border-radius: 22px;
+
+}
+
+.texto::placeholder {
+    color: #0b6697;
+    
+
+}
+
+.texto:focus,
+.texto:active{
+    border: none;
+    outline: none;
+    
+
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.terminos p {
+    font-family: "Inter";
+    font-style:normal ;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #f9faf9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-top: -55px;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 75%;
+    left: 12%;
+    top: 80.7%;
+    
+}
+
+.btn {
+    align-items:center ;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 15.9%;
+    background-color:#000000;   
+    border-radius: 8px;
+    border: 1px solid #42ff45;
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #419402;
+    margin-right: 4px;
+    margin-top: -4.5px;
+}
+
+.btn:hover {
+    margin-top: 0.3%;
+    width: 15.7%;
+    padding:1.8% ;
+    
+}
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height:80%;
+    left: 60%;
+    top: 14%;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.mensaje-encriptado{
+    background-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5;
+    gap: 16px;
+    position: absolute;
+    width: 22rem;
+    top: 67%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2 {
+    width:60% ; 
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color:#343a40 ;
+}
+
+.mensaje-encriptado p {
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+    text-align: center;
+    color: #495050;
+
+
+}
+
+.encriptado img {
+    position: absolute;
+    width:80%;
+    height: 50%;
+    top: 15%;
+
+}
+footer {
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 10px;
+    align-items: center;
+    margin-top: -3.2rem;
+  }
+  footer p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #000000;
+  }
+  
+  .icons_socials img {
+    width: 3rem;
+  }
+@media (max-width: 44.5em){
+    header{
+        width: 100%;
+        font-size: 56px;
+    }
+    .container{
+        width: 100%;
+    }
+    .mensaje-encriptado h2 {
+        font-size: 22px;
+    }
+    .mensaje-encriptado p {
+        font-size: 15px;
+    }
+    .terminos p {
+        font-size: 13px;
+    }
+    .icons_socials img {
+        visibility: hidden;
+    }
+        
+}
+
+@media (max-width: 57.5em) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .encriptar {
+       width: 100%; 
+    }
+    .texto {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .terminos p {
+        font-size: 16px;
+    }
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn{
+        width: 48%;
+        border-radius: 16px;
+    }
+   .btn:hover{
+        margin: 0.3%;
+        width:47.5% ;
+        padding: 1.8%;
+    }
+   .encriptado {
+        width: 85%;
+        height: 17%;
+        left: 12%;
+        top: 82%;
+    }
+   .mensaje-encriptado {
+        width: 100%;
+        top: 5%;
+    }
+    .encriptado img {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
